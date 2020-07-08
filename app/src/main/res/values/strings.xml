@@ -1,0 +1,14 @@
+<resources>
+
+
+    <string name="app_name">TapasBeton</string>
+    <string name="beton">ООО "ТАПАС ПЛЮС" \n контакты</string>
+    <string name="Choose_beton">Оставить Заявку</string>
+    <string name="cont">Контакты:</string>
+    <string name="location">Карта доставки</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dropped_pin">Координаты доставки</string>
+    <string name="manager">Телефон менеджера</string>
+    <string name="dispetcher">Электронная почта</string>
+    <string name="calculator">Калькулятор бетона</string>
+</resources>

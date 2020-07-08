@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "59385956466",
+    "firebase_url": "https://tapasbeton.firebaseio.com",
+    "project_id": "tapasbeton",
+    "storage_bucket": "tapasbeton.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59385956466:android:687b8e6e7ff5c2cb31daeb",
+        "android_client_info": {
+          "package_name": "com.tapasbeton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59385956466-d5ejbur1hded43u46b8rcmssnb23v0e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Kyg2lGiHtkXq2oQh-PllGOw0Q0CfJKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59385956466-d5ejbur1hded43u46b8rcmssnb23v0e3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
