@@ -7,11 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.tapasbeton.R
 import com.tapasbeton.calculator.CaclulatorFragment
 import com.tapasbeton.contacts.ContactsFragment
-import com.tapasbeton.maps.MapsFragment
-import com.tapasbeton.R
 import com.tapasbeton.firebase.StorageActivity
+import com.tapasbeton.maps.MapsFragment
+import com.tapasbeton.spisok.BetonActivity
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment:Fragment() {
@@ -46,6 +47,11 @@ class MainFragment:Fragment() {
         logo.setOnClickListener() {
             val intent = Intent (Intent.ACTION_VIEW, Uri.parse("https://www.tapas.by/"))
             startActivity(intent)
+        }
+
+        spisok.setOnClickListener(){
+            val intent = Intent (getActivity(), BetonActivity::class.java)
+            getActivity()?.startActivity(intent)
         }
 
 

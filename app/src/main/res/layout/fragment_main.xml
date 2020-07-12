@@ -28,9 +28,20 @@
     </ImageView>
 
     <Button
+        android:id ="@+id/spisok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:text = "@string/spisok">
+    </Button>
+
+    <Button
         android:id ="@+id/beton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:textSize="24sp"
         android:fontFamily="sans-serif-black"
@@ -42,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:textSize="24sp"
         android:fontFamily="sans-serif-black"
         android:text = "@string/calculator">
@@ -53,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:textSize="24sp"
         android:fontFamily="sans-serif-black"
         android:text = "@string/location">

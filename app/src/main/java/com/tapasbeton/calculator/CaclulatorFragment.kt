@@ -7,13 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tapasbeton.R
 import kotlinx.android.synthetic.main.fragment_calculator.*
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 
 class CaclulatorFragment:Fragment() {
-
-  val mViewModel : CalculatorViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,7 +18,6 @@ class CaclulatorFragment:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_calculator, container, false)
-
 
 
     }
@@ -32,13 +28,23 @@ class CaclulatorFragment:Fragment() {
 
         summ.setOnClickListener(){
 
-            var a = editText1.text.toString()
-            var b = editText2.text.toString()
-            var c = editText3.text.toString()
+            val a = editText1.text.toString()
+            val b = editText2.text.toString()
+            val c = editText3.text.toString()
 
-            var result = a?.toDouble()*b?.toDouble()*c?.toDouble()
+            var result = 0.0;
 
-            summText.text = result.toString() + " м3"
+            if (!(a.isEmpty())) {
+                if (!(b.isEmpty())) {
+                    if (!(c.isEmpty())) {
+
+                        result = a.toDouble() * b.toDouble() * c.toDouble()
+
+                    }
+                }
+            }
+
+            summText.text = ("$result м3")
 
 
 

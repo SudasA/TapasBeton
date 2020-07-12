@@ -24,6 +24,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".firebase.StorageActivity"/>
+        <activity android:name=".spisok.BetonActivity"/>
         <activity android:name=".main.FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -10,5 +10,14 @@
     <string name="dropped_pin">Координаты доставки</string>
     <string name="manager">Телефон менеджера</string>
     <string name="dispetcher">Электронная почта</string>
-    <string name="calculator">Калькулятор бетона</string>
+    <string name="calculator">Объем бетона</string>
+    <string name="tel">+375445555555</string>
+    <string name="mail">sasaska@mail.ru</string>
+    <string name="ob">Объем бетона</string>
+    <string name="spisok">Марки бетона</string>
+    <string name="zakaz">Отправить заявку </string>
+    <string name="zakaz_storage">Внесите данные для заказа (дата , время, марка, объем, контактный телефон)</string>
+    <string name="order">Отправить заявку менеджеру </string>
+    <string name="all_orders">Просмотреть все заявки</string>
+    <string name="All_orders_spisok">База данных с заявками</string>
 </resources>
