@@ -26,7 +26,7 @@ class ContactsFragment: Fragment() {
 
         callButton.setOnClickListener {
 
-            val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+375445498533", null))
+            val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+375445555555", null))
             startActivity(intent)
 
         }
@@ -34,7 +34,7 @@ class ContactsFragment: Fragment() {
         emailButton.setOnClickListener {
 
             val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
-                data = Uri.parse("mailto:sajkarp@mail.ru")
+                data = Uri.parse("mailto:bsv@mail.ru")
             }
             startActivity(Intent.createChooser(emailIntent, "Send feedback"))
 
