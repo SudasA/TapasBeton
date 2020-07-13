@@ -14,8 +14,6 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="M100" />
@@ -26,10 +24,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/marka"
-    android:layout_marginBottom="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
     tools:text="C8/10" />
 
@@ -39,10 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/classi"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="гранит" />
 
@@ -52,10 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/zapoln"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="П1-П5" />
 
@@ -65,10 +51,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/podvign"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="F50" />
 
@@ -78,10 +60,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frozen"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="W2" />
 

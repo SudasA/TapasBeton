@@ -21,4 +21,10 @@
     <string name="all_orders">Просмотреть все заявки</string>
     <string name="All_orders_spisok">База данных с заявками</string>
     <string name="lst_lng">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dispetcher2">Телефон диспетчера</string>
+    <string name="tel2">+375295555555</string>
+    <string name="time">C 8-00 до 20-00 ежедневно</string>
+    <string name="time2">Время работы</string>
+    <string name="adress">Адрес производства</string>
+    <string name="adress2">аг. Колодищи, ул. Чкалова, 37</string>
 </resources>

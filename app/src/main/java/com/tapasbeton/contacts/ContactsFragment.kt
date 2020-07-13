@@ -43,6 +43,13 @@ class ContactsFragment: Fragment() {
             startActivity(Intent.createChooser(emailIntent, "Send feedback"))
 
         }
+
+        callButton2.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+375295555555", null))
+            startActivity(intent)
+
+        }
     }
 
    // override fun onSaveInstanceState(outState: Bundle) {

@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     android:background="@color/ic_launcher_background">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
         android:text="@string/cont"
-        android:fontFamily="sans-serif-black"
         android:textSize="24sp">
     </TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
         android:text="@string/manager"
-        android:fontFamily="sans-serif-black"
         android:textSize="24sp">
     </TextView>
 
@@ -30,8 +35,8 @@
         android:id="@+id/callButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/tel"
         android:textSize="30sp">
@@ -42,10 +47,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
         android:text="@string/dispetcher"
-        android:fontFamily="sans-serif-black"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/callButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/mail"
+        android:textSize="30sp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/dispetcher2"
         android:textSize="24sp">
     </TextView>
 
@@ -53,14 +78,59 @@
     <TextView
         android:id="@+id/emailButton"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/mail"
+        android:text="@string/tel2"
         android:textSize="30sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/time2"
+        android:textSize="24sp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/time"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/adress"
+        android:textSize="24sp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/adress2"
+        android:textSize="24sp">
 
     </TextView>
 
 
 </LinearLayout>
+</ScrollView>
