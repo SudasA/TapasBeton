@@ -30,7 +30,6 @@ class MainFragment:Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         contacts.setOnClickListener{
-            //val b = activity
 
                 activity?.supportFragmentManager
                     ?.beginTransaction()
@@ -49,46 +48,41 @@ class MainFragment:Fragment() {
         }
 
         spisok.setOnClickListener(){
-            val intent = Intent (getActivity(), BetonActivity::class.java)
+            val intent = Intent (activity, BetonActivity::class.java)
             activity?.startActivity(intent)
         }
 
 
         beton.setOnClickListener(){
-            val intent = Intent (getActivity(), StorageActivity::class.java)
-            getActivity()?.startActivity(intent)
+            val intent = Intent (activity, StorageActivity::class.java)
+            activity?.startActivity(intent)
         }
 
-        calculator.setOnClickListener(){
-
-            val b = activity
-            if (b != null) {
-                b.supportFragmentManager
-                    .beginTransaction()
-                    .replace(
+        calculator.setOnClickListener()
+        {
+                activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(
                         R.id.fragment_container,
                         CaclulatorFragment()
                     )
-                    .addToBackStack(MainFragment::class.java.name)
-                    .commit()
-            }
+                    ?.addToBackStack(MainFragment::class.java.name)
+                    ?.commit()
+
         }
 
 
 
         maps.setOnClickListener()
         {
-            val b = activity
-            if (b != null) {
-                b.supportFragmentManager
-                    .beginTransaction()
-                    .replace(
+                activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(
                         R.id.fragment_container,
                         MapsFragment()
                     )
-                    .addToBackStack(MainFragment::class.java.name)
-                    .commit()
-            }
+                    ?.addToBackStack(MainFragment::class.java.name)
+                    ?.commit()
         }
     }
 }

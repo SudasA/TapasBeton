@@ -22,14 +22,12 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
 
     companion object {
         var mapFragment : SupportMapFragment?=null
-        val TAG: String = MapsFragment::class.java.simpleName
-        fun newInstance() = MapsFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
-        var rootView = inflater.inflate(R.layout.activity_maps, container, false)
+        val rootView = inflater.inflate(R.layout.activity_maps, container, false)
 
         mapFragment = childFragmentManager.findFragmentById(
             R.id.map
@@ -51,7 +49,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             MarkerOptions().position(kolodishi).title("РБУ ТАПАС ПЛЮС, аг. Колодищи, ул. Чкалова, 37").icon(
                 BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)))
 
-        map.getUiSettings().setZoomControlsEnabled(true)
+        map.uiSettings.setZoomControlsEnabled(true)
         setMapLongClick(map)
 
 

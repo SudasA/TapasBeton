@@ -3,7 +3,7 @@ package com.tapasbeton.spisok
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tapasbeton.R
 import kotlinx.android.synthetic.main.activity_beton.*
@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_beton.*
 class BetonActivity:AppCompatActivity() {
 
     //инициализируем ViewModel ленивым способом
-    private val BetonViewModel by lazy { ViewModelProviders.of(this).get(BetonViewModel::class.java)}
+    private val BetonViewModel by lazy { ViewModelProvider(this).get(BetonViewModel::class.java)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
