@@ -12,6 +12,4 @@ class BetonViewModel: ViewModel() {
        betonList.value = BetonData.getBetons()
     }
 
-    fun getListBetons() = betonList
-
 }

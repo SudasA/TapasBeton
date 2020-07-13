@@ -23,9 +23,9 @@ class BetonActivity:AppCompatActivity() {
         recyclerView.adapter = adapter
 
         //подписываем адаптер на изменения списка
-        BetonViewModel.getListBetons().observe(this, Observer {
+        BetonViewModel.betonList.observe(this, Observer {
             it?.let {
-                adapter.refreshUsers(it)
+                adapter.betons = it
             }
         })
 

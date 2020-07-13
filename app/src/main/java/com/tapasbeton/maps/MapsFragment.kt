@@ -13,7 +13,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.tapasbeton.R
-import java.util.*
 
 
 class MapsFragment : Fragment(), OnMapReadyCallback {
@@ -62,12 +61,15 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private fun setMapLongClick(map: GoogleMap) {
         map.setOnMapLongClickListener { latLng ->
             // A Snippet is Additional text that's displayed below the title.
-            val snippet = String.format(
-                Locale.getDefault(),
-                "Lat: %1$.5f, Long: %2$.5f",
-                latLng.latitude,
-                latLng.longitude
-            )
+//            val snippet = String.format(
+//                Locale.getDefault(),
+//                "Lat: %1$.5f, Long: %2$.5f",
+//                latLng.latitude,
+//                latLng.longitude
+//            )
+
+            val snippet = getString(R.string.lst_lng, latLng.latitude, latLng.longitude)
+
             map.addMarker(
                 MarkerOptions()
                     .position(latLng)

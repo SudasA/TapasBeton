@@ -13,16 +13,20 @@ import kotlinx.android.synthetic.main.fragment_contacts.*
 
 class ContactsFragment: Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_contacts, container, false)
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         callButton.setOnClickListener {
 
@@ -39,8 +43,11 @@ class ContactsFragment: Fragment() {
             startActivity(Intent.createChooser(emailIntent, "Send feedback"))
 
         }
-
-        }
-
-
     }
+
+   // override fun onSaveInstanceState(outState: Bundle) {
+    //    super.onSaveInstanceState(outState)
+
+  //      getSupportFragmentManager().putFragment(outState, "myFragmentName", ContactsFragment());
+ //   }
+}

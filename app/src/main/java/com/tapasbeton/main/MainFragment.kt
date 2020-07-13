@@ -29,29 +29,28 @@ class MainFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        contacts.setOnClickListener()
-        {
-            val b = activity
-            if (b != null) {
-                b.supportFragmentManager
-                    .beginTransaction()
-                    .replace(
+        contacts.setOnClickListener{
+            //val b = activity
+
+                activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(
                         R.id.fragment_container,
                         ContactsFragment()
                     )
-                    .addToBackStack(MainFragment::class.java.name)
-                    .commit()
-            }
+                    ?.addToBackStack(MainFragment::class.java.name)
+                    ?.commit()
+
         }
 
-        logo.setOnClickListener() {
+        logo.setOnClickListener {
             val intent = Intent (Intent.ACTION_VIEW, Uri.parse("https://www.tapas.by/"))
             startActivity(intent)
         }
 
         spisok.setOnClickListener(){
             val intent = Intent (getActivity(), BetonActivity::class.java)
-            getActivity()?.startActivity(intent)
+            activity?.startActivity(intent)
         }
 
 

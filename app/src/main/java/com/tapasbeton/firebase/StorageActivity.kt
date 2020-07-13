@@ -47,9 +47,9 @@ class StorageActivity: AppCompatActivity() {
                         for (document in result) {
                             Log.d("h", "${document.id} => ${document.data}")
                             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-                            builder.append(document.data)
+                            builder.append(document.data.get("comment"))
                             builder.append(System.getProperty("line.separator"));
-                            textView2.setText(builder.toString())
+                            textView2.text = builder.toString()
                         }
                     }
                     .addOnFailureListener { exception ->

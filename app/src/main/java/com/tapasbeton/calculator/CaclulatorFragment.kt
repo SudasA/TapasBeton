@@ -9,8 +9,9 @@ import com.tapasbeton.R
 import kotlinx.android.synthetic.main.fragment_calculator.*
 
 
-
 class CaclulatorFragment:Fragment() {
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,10 +21,13 @@ class CaclulatorFragment:Fragment() {
         return inflater.inflate(R.layout.fragment_calculator, container, false)
 
 
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
 
         summ.setOnClickListener(){
@@ -34,14 +38,8 @@ class CaclulatorFragment:Fragment() {
 
             var result = 0.0;
 
-            if (!(a.isEmpty())) {
-                if (!(b.isEmpty())) {
-                    if (!(c.isEmpty())) {
-
+            if (!(a.isEmpty())&&!(b.isEmpty())&&!(c.isEmpty())) {
                         result = a.toDouble() * b.toDouble() * c.toDouble()
-
-                    }
-                }
             }
 
             summText.text = ("$result м3")
@@ -50,9 +48,8 @@ class CaclulatorFragment:Fragment() {
 
         }
 
-
     }
 
 
-    }
+}
 
