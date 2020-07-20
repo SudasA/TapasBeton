@@ -39,8 +39,7 @@ class StorageActivity: AppCompatActivity() {
 
             button2.setOnClickListener {
 
-
-                val docRef = firestore.collection("feedback")
+                firestore.collection("feedback")
                     .get()
                     .addOnSuccessListener { result ->
                         val builder = StringBuilder()
@@ -56,17 +55,8 @@ class StorageActivity: AppCompatActivity() {
                         Log.d("erroe", "get failed with ", exception)
                         Toast.makeText(this, "Failure", Toast.LENGTH_SHORT).show()
                     }
-
-
-
-
-
-
-
-
-
-
             }
+
         }
     }
 

@@ -47,15 +47,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
          />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginHorizontal="20dp"
-        android:text="@string/all_orders"
-        />
+        android:layout_marginTop="10dp"
+        android:text="@string/all_orders" />
 
     <TextView
         android:id="@+id/textView2"

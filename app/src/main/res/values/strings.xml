@@ -17,7 +17,7 @@
     <string name="spisok">Марки бетона</string>
     <string name="zakaz">Отправить заявку </string>
     <string name="zakaz_storage">Внесите данные для заказа (дата , время, марка, объем, контактный телефон)</string>
-    <string name="order">Отправить заявку менеджеру </string>
+    <string name="order">Отправить заявку </string>
     <string name="all_orders">Просмотреть все заявки</string>
     <string name="All_orders_spisok">База данных с заявками</string>
     <string name="lst_lng">Lat: %1$.5f, Long: %2$.5f</string>
@@ -27,4 +27,9 @@
     <string name="time2">Время работы</string>
     <string name="adress">Адрес производства</string>
     <string name="adress2">аг. Колодищи, ул. Чкалова, 37</string>
+    <string name="clear">Очистить заявки</string>
+    <string name="length">Длина, м</string>
+    <string name="breigth">Ширина, м</string>
+    <string name="heigth">Высота , м</string>
+    <string name="concrete">Бетона м3</string>
 </resources>

@@ -8,18 +8,31 @@
     android:orientation="vertical"
     >
 
+    <TextView
+        android:id="@+id/toast1"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent1"
+        android:layout_marginTop="60dp"
+        android:layout_width="197dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal3"
+        tools:layout_editor_absoluteX="49dp" />
+
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Длина, м"
+        android:hint="@string/length"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:layout_editor_absoluteX="52dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText2"
@@ -27,10 +40,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ширина, м"
+        android:hint="@string/breigth"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:layout_editor_absoluteX="52dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText3"
@@ -38,15 +52,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Высота , м"
+        android:hint="@string/heigth"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:layout_editor_absoluteX="52dp"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/summText"
         android:layout_gravity="center"
-        android:text ="Бетона м3"
+        android:hint ="@string/concrete"
         android:textSize="24sp"
         android:layout_width="197dp"
         android:layout_height="60dp"
