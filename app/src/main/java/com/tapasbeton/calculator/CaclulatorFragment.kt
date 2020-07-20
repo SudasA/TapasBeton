@@ -45,6 +45,10 @@ class CaclulatorFragment:Fragment() {
             summText.text = ("$it m3")
         })
 
+        model.text1.observe(viewLifecycleOwner, Observer {
+            toast1.text = it
+        })
+
 
         summ.setOnClickListener(){
 
@@ -59,7 +63,7 @@ class CaclulatorFragment:Fragment() {
             if (a.isNotEmpty()&&b.isNotEmpty()&&c.isNotEmpty()) {
 
                 if ((a == "0") || (b == "0") || (c == "0") ) {
-                    toast1.text = "Число 0. Ввести другое"
+                    toast1.text = "Значение 0. Ввести другое число"
                 }
                 else    {
                     model.count(a.toDouble(), b.toDouble(), c.toDouble())
@@ -71,7 +75,7 @@ class CaclulatorFragment:Fragment() {
 
                 toast1.text = "Пустое значение"
             }
-
+             model.maketxt1(toast1.text.toString())
             }
 
         }

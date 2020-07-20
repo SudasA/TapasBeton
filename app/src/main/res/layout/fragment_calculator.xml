@@ -12,7 +12,7 @@
         android:id="@+id/toast1"
         android:layout_gravity="center"
         android:textSize="20sp"
-        android:textColor="@color/colorAccent1"
+        android:textColor="@color/colorPrimary"
         android:layout_marginTop="20dp"
         android:layout_width="197dp"
         android:layout_height="60dp"
