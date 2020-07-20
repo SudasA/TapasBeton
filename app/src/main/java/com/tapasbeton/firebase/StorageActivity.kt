@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.tapasbeton.R
@@ -15,7 +17,15 @@ class StorageActivity: AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_storage)
 
+
+            val datamodel = ViewModelProvider(this).get(StorageViewModel::class.java)
+
             val firestore = Firebase.firestore
+
+
+            datamodel.datas.observe(this, Observer {
+                textView2.text = it
+            })
 
             button.setOnClickListener {
                 val comment = editText.text?.toString()
@@ -49,13 +59,19 @@ class StorageActivity: AppCompatActivity() {
                             builder.append(document.data.get("comment"))
                             builder.append(System.getProperty("line.separator"));
                             textView2.text = builder.toString()
+
+                            // observe
+                            datamodel.maketxt(builder.toString())
                         }
                     }
                     .addOnFailureListener { exception ->
                         Log.d("erroe", "get failed with ", exception)
                         Toast.makeText(this, "Failure", Toast.LENGTH_SHORT).show()
                     }
+
             }
+
+
 
         }
     }

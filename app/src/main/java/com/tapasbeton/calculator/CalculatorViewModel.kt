@@ -10,7 +10,6 @@ class CalculatorViewModel(): ViewModel() {
 
     fun count (a: Double, b: Double, c:Double ){
 
-
         val res = a * b * c
         result.postValue(res)
 

@@ -52,9 +52,4 @@ class ContactsFragment: Fragment() {
         }
     }
 
-   // override fun onSaveInstanceState(outState: Bundle) {
-    //    super.onSaveInstanceState(outState)
-
-  //      getSupportFragmentManager().putFragment(outState, "myFragmentName", ContactsFragment());
- //   }
 }
