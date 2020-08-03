@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     >
 
@@ -14,8 +15,9 @@
         android:textSize="20sp"
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="20dp"
-        android:layout_width="197dp"
-        android:layout_height="60dp"
+        android:text="@string/Calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal3"
         tools:layout_editor_absoluteX="49dp" />
@@ -61,6 +63,7 @@
     <TextView
         android:id="@+id/summText"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:hint ="@string/concrete"
         android:textSize="24sp"
         android:layout_width="197dp"
@@ -71,10 +74,17 @@
 
     <Button
         android:id="@+id/summ"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text ="@string/ob"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_big" />
 
 
 </LinearLayout>

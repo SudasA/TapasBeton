@@ -1,7 +1,10 @@
 package com.tapasbeton.firebase
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -9,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.tapasbeton.R
+import com.tapasbeton.main.FragmentActivity
 import kotlinx.android.synthetic.main.activity_storage.*
 
 class StorageActivity: AppCompatActivity() {
@@ -55,7 +59,7 @@ class StorageActivity: AppCompatActivity() {
                         val builder = StringBuilder()
                         for (document in result) {
                             Log.d("h", "${document.id} => ${document.data}")
-                            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
+                            //Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
                             builder.append(document.data.get("comment"))
                             builder.append(System.getProperty("line.separator"));
                             textView2.text = builder.toString()
@@ -68,12 +72,25 @@ class StorageActivity: AppCompatActivity() {
                         Log.d("erroe", "get failed with ", exception)
                         Toast.makeText(this, "Failure", Toast.LENGTH_SHORT).show()
                     }
+            }
+        }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId){
+            R.id.backup -> startActivity(Intent(this, FragmentActivity::class.java))
+            //Toast.makeText(this, "Backup clicked", Toast.LENGTH_SHORT).show()
+            else -> {
 
             }
 
-
-
         }
+        return super.onOptionsItemSelected(item)
+    }
     }
 
 

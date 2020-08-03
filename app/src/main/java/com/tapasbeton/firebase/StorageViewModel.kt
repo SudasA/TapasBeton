@@ -7,7 +7,7 @@ class StorageViewModel: ViewModel() {
 
     var datas = MutableLiveData<String>()
 
-    fun maketxt (txt: String  ){
+    fun maketxt (txt: String ) {
 
         datas.postValue(txt)
 

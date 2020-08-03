@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="24dp"
         android:text="@string/cont"
         android:textSize="24sp">
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="24dp"
         android:text="@string/manager"
         android:textSize="24sp">
@@ -39,7 +39,7 @@
         android:layout_marginStart="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/tel"
-        android:textSize="30sp">
+        android:textSize="24sp">
 
     </TextView>
 
@@ -47,7 +47,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="24dp"
         android:text="@string/dispetcher"
         android:textSize="24sp">
@@ -61,7 +61,7 @@
         android:layout_marginStart="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/mail"
-        android:textSize="30sp">
+        android:textSize="24sp">
 
     </TextView>
 
@@ -69,7 +69,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="24dp"
         android:text="@string/dispetcher2"
         android:textSize="24sp">
@@ -84,36 +84,14 @@
         android:layout_marginStart="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/tel2"
-        android:textSize="30sp">
+        android:textSize="24sp">
 
     </TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="24dp"
-        android:text="@string/time2"
-        android:textSize="24sp">
-    </TextView>
-
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="match_parent"
         android:layout_marginTop="10dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/time"
-        android:textSize="24sp">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="24dp"
         android:text="@string/adress"
         android:textSize="24sp">
@@ -129,9 +107,16 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/adress2"
         android:textSize="24sp">
-
     </TextView>
 
+    <ImageView
+        android:id = "@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/logo_big"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/logo">
+    </ImageView>
 
 </LinearLayout>
 </ScrollView>

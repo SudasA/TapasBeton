@@ -2,7 +2,7 @@
 
 
     <string name="app_name">TapasBeton</string>
-    <string name="beton">ООО "ТАПАС ПЛЮС" \n контакты</string>
+    <string name="beton">Контакты</string>
     <string name="Choose_beton">Оставить Заявку</string>
     <string name="cont">Контакты:</string>
     <string name="location">Карта доставки</string>
@@ -16,14 +16,14 @@
     <string name="ob">Объем бетона</string>
     <string name="spisok">Марки бетона</string>
     <string name="zakaz">Отправить заявку </string>
-    <string name="zakaz_storage">Внесите данные для заказа (дата , время, марка, объем, контактный телефон)</string>
+    <string name="zakaz_storage">Внесите данные для заказа</string>
     <string name="order">Отправить заявку </string>
     <string name="all_orders">Просмотреть все заявки</string>
     <string name="All_orders_spisok">База данных с заявками</string>
     <string name="lst_lng">Lat: %1$.5f, Long: %2$.5f</string>
     <string name="dispetcher2">Телефон диспетчера</string>
     <string name="tel2">+375295555555</string>
-    <string name="time">C 8-00 до 20-00 ежедневно</string>
+    <string name="time">C 8–00 до 20–00 ежедневно</string>
     <string name="time2">Время работы</string>
     <string name="adress">Адрес производства</string>
     <string name="adress2">аг. Колодищи, ул. Чкалова, 37</string>
@@ -32,4 +32,9 @@
     <string name="breigth">Ширина, м</string>
     <string name="heigth">Высота , м</string>
     <string name="concrete">Бетона м3</string>
+    <string name="search">Search</string>
+    <string name="backup">backup</string>
+    <string name="Calc">Калькулятор бетона</string>
+    <string name="logo">Logo</string>
+    <string name="logo2">logo2</string>
 </resources>
